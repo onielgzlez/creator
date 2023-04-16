@@ -1,0 +1,191 @@
+.central-col{
+	width:700px
+}
+.has-icon-centered{
+	position: relative!important;
+	left: 50px!important;
+    top: -76px!important;
+}
+a.has-no-decoration{
+	text-decoration: none!important;
+}
+.is-size-6{
+	font-size: 1rem !important
+}
+i.is-rounded{
+	border-radius: 50%!important;
+}
+footer.modal-card-foot{
+	border-top: none!important;
+	background-color: #fff!important
+}
+.is-limit-top{
+	position: absolute;
+	top:-16px;
+	right:calc(50% - 10px)
+}
+.is-limit-bottom{
+	position: absolute;
+	bottom:-18px;
+	right:calc(50% - 10px)
+}
+.has-text-initial{
+	text-align:initial!important
+}
+.has-background-cyan{
+	background-color:#F0F7FF ;
+}
+.has-background-cyan-dark{
+	background-color:#E1EFFF
+}
+.has-100vh{
+	height:100vh;
+}
+.has-100h{
+	height:100%;
+}
+.is-fullwidth{
+	width:100%!important
+}
+.has-nowrap{
+	white-space: nowrap!important;
+	overflow: hidden!important;
+	text-overflow: ellipsis!important;
+	width:100%
+}
+.has-background-black-alpha{
+	background:#00000068;
+}
+.is-disabled{
+	opacity:0.5!important
+}
+.panel-absolute{
+	position: absolute!important;
+	width: -webkit-fill-available;
+	bottom:0;
+	height: calc(100vh - 74px);
+	z-index: 4;
+}
+/*Tooltip*/
+.has-tooltip-active:hover::before{
+	background: #0F69C4;
+	border-radius: 2px;
+	content: attr(data-tooltip);
+	padding: 0.5rem 1rem;
+	text-overflow: ellipsis;
+	white-space: pre;
+	box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: .75rem;
+    hyphens: auto;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1020;
+}
+.has-tooltip-active:hover::after{    
+	content: '';
+	box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    border-style: solid;
+    font-size: .75rem;
+    hyphens: auto;
+    border-width: 6px;overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1020;
+}
+.has-tooltip-active.has-tooltip-top:hover::before{
+	top:10%;
+	right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-top: -5px;
+    margin-bottom: auto;
+    transform: translate(-50%, -100%);
+}
+.has-tooltip-active.has-tooltip-top:hover::after{
+	top: 10%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-top: -5px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: -5px;
+    border-color: #0F69C4 transparent transparent transparent;
+}
+.has-tooltip-active.has-tooltip-right::before{
+    top: auto;
+    right: 0px;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translate(100%, 0%);
+	display:none;
+    transition: all 1s;
+
+}
+.has-tooltip-active.has-tooltip-right:hover::before{
+    top: auto;
+    right: -11px;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translate(100%, 50%);
+	display: block;
+}
+.has-tooltip-active.has-tooltip-right:hover::after{
+	top: auto;
+    right: 0;
+    bottom: 50%;
+    left: auto;
+    margin-top: auto;
+    margin-right: -12px;
+    margin-bottom: -6px;
+    margin-left: auto;
+    border-color: transparent #0F69C4 transparent transparent;
+}
+.has-tooltip-active.has-tooltip-bottom:hover::before{
+	top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: -5px;
+    transform: translate(-50%, 100%);
+}
+.has-tooltip-active.has-tooltip-bottom:hover::after{    
+	top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    border-color: transparent transparent #0F69C4 transparent;
+}
+.has-tooltip-active.has-tooltip-left:hover::before{
+	top: auto;
+    right: auto;
+    bottom: 50%;
+    left: -11px;
+    transform: translate(-100%, 50%);
+}
+.has-tooltip-active.has-tooltip-left:hover::after{    
+	top: auto;
+    right: auto;
+    bottom: 50%;
+    left: 0;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: -6px;
+    margin-left: -11px;
+    border-color: transparent transparent transparent #0F69C4;
+}

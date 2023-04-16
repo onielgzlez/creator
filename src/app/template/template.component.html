@@ -1,0 +1,11 @@
+<div class="p-3 pt-5 is-narrow central-col">
+    <h1 class="mb-5">Nuevo prototipo</h1>
+    <p class="mb-4">Selecciona un tipo de plantilla</p>
+    <div class="is-flex" [ngClass]="section.class" *ngFor="let section of templateList">
+        <button [attr.data-tooltip]="template.name" *ngFor="let template of section.templates"
+            class="button p-0 is-borderless is-block mr-4" [ngClass]="template.class">
+            <img [src]="template.src" [alt]="template.name" class="is-bordered p-4 link is-radius">
+            <p class="has-text-dark mt-2">{{ template.name }}</p>
+        </button>
+    </div>
+</div>

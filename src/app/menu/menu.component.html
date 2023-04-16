@@ -1,0 +1,5 @@
+<div class="has-text-centered mb-3" *ngFor="let menu of menuList">
+    <a [attr.data-tooltip]="menu.name" [href]="menu.href" class="has-tooltip-active has-tooltip-right is-radius is-bordered has-border-primary button p-4 py-4 is-inlineblock is-size-3">
+        <i [ngClass]="menu.icon"></i>
+    </a>
+</div>
